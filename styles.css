@@ -124,3 +124,31 @@ h1{
   color:var(--muted);
   text-decoration:none;
 }
+
+.hero-title{
+  margin: 0 auto 34px;
+  max-width: 520px;
+  text-align: center;
+}
+
+.hero-title .line{
+  display: inline;
+}
+
+@media (max-width: 600px){
+  .hero-title{
+    max-width: 360px; /* slightly wider than before */
+  }
+
+  .hero-title .line{
+    display: block;
+  }
+
+  .hero-title .line-1{
+    margin-bottom: 6px;
+  }
+
+  .hero-title .line-2{
+    margin-bottom: 6px;
+  }
+}
