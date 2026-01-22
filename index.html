@@ -27,8 +27,17 @@
         </p>
 
         <!-- Replace this form with ConvertKit embed later -->
-        <form class="formWrap" onsubmit="event.preventDefault();">
-          <input type="email" placeholder="Your Email Address" required />
+        <form
+          class="formWrap"
+          action="https://app.kit.com/forms/8961856/subscriptions"
+          method="post"
+        >
+          <input
+            type="email"
+            name="email_address"
+            placeholder="Your Email Address"
+            required
+          />
           <button type="submit">Get Notified</button>
         </form>
 
