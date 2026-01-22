@@ -188,18 +188,16 @@ h1{
   margin-bottom: 8px;
 }
 
-/* FOOTER — keep it thin, not centered, icons hard-left, privacy hard-right */
 .footer{
   width: 100%;
-  margin: 0; /* prevents random extra vertical space from older footer rules */
-  padding: 12px 16px; /* thin height */
+  padding: 12px 16px;            /* thin */
   border-top: 1px solid rgba(52,39,7,.12);
 
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  text-align: left; /* just in case */
+  text-align: left;
   font-size: 12px;
 }
 
@@ -209,32 +207,33 @@ h1{
   gap: 14px;
 }
 
-.footer-left a {
+/* this makes icons brown */
+.footer-left a{
   color: #342707;
   display: flex;
   align-items: center;
 }
 
-.footer-left svg {
+.footer-left .icon{
   width: 22px;
   height: 22px;
   opacity: 0.85;
-  transition: opacity 0.2s ease;
+  transition: opacity .2s ease;
 }
 
-.footer-left a:hover svg {
-  opacity: 1;
-}
+.footer-left a:hover .icon{ opacity: 1; }
 
 .footer-right a{
-  color: var(--muted);
+  color: rgba(52,39,7,.45);
   text-decoration: none;
 }
 
 .footer-right a:hover{ text-decoration: underline; }
 
-/* Mobile: keep SAME left/right layout (do NOT stack/center) */
+/* Mobile: keep SAME left/right layout */
 @media (max-width: 600px){
-  .footer{ padding: 12px 16px; }
-  .footer-left img{ width: 26px; height: 26px; } /* optional */
+  .footer{
+    padding: 12px 16px;
+  }
 }
+
