@@ -180,3 +180,21 @@ h1{
   margin-bottom: 16px;
 }
 
+/* Privacy page: headings centered, body text left */
+.privacy {
+  text-align: left;
+}
+
+.privacy h1,
+.privacy h2 {
+  text-align: center;
+}
+
+.privacy ul {
+  text-align: left;
+  padding-left: 22px;
+}
+
+.privacy li {
+  margin-bottom: 8px;
+}
