@@ -200,3 +200,46 @@ h1{
 .privacy li {
   margin-bottom: 8px;
 }
+
+.footer {
+  max-width: 1100px;
+  margin: 80px auto 40px;
+  padding: 0 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-left {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-left img {
+  width: 18px;
+  height: 18px;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.footer-left img:hover {
+  opacity: 1;
+}
+
+.footer-right a {
+  font-size: 14px;
+  color: #6b5f4b;
+  text-decoration: none;
+}
+
+.footer-right a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
