@@ -209,14 +209,22 @@ h1{
   gap: 14px;
 }
 
-.footer-left img{
-  width: 22px;
-  height: 22px;
-  display: block;
-  opacity: 0.85;
+.footer-left a {
+  color: #342707;
+  display: flex;
+  align-items: center;
 }
 
-.footer-left a:hover img{ opacity: 1; }
+.footer-left svg {
+  width: 22px;
+  height: 22px;
+  opacity: 0.85;
+  transition: opacity 0.2s ease;
+}
+
+.footer-left a:hover svg {
+  opacity: 1;
+}
 
 .footer-right a{
   color: var(--muted);
