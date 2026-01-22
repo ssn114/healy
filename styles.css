@@ -112,19 +112,6 @@ h1{
   color: var(--muted2);
 }
 
-.footer{
-  display:flex;
-  justify-content:space-between;
-  padding:18px 20px;
-  border-top:1px solid rgba(52,39,7,.12);
-  font-size:12px;
-}
-
-.footer a{
-  color:var(--muted);
-  text-decoration:none;
-}
-
 .hero-title{
   margin: 0 auto 34px;
   max-width: 520px;
@@ -201,131 +188,45 @@ h1{
   margin-bottom: 8px;
 }
 
-.footer {
-  max-width: 1100px;
-  margin: 80px auto 40px;
-  padding: 0 24px;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.footer-left {
-  display: flex;
-  gap: 16px;
-}
-
-.footer-left img {
-  width: 18px;
-  height: 18px;
-  opacity: 0.7;
-  transition: opacity 0.2s ease;
-}
-
-.footer-left img:hover {
-  opacity: 1;
-}
-
-.footer-right a {
-  font-size: 14px;
-  color: #6b5f4b;
-  text-decoration: none;
-}
-
-.footer-right a:hover {
-  text-decoration: underline;
-}
-
-@media (max-width: 600px) {
-  .footer {
-    flex-direction: column;
-    gap: 20px;
-  }
-}
-
-.footer {
+/* FOOTER — keep it thin, not centered, icons hard-left, privacy hard-right */
+.footer{
   width: 100%;
-  padding: 24px 32px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin: 0; /* prevents random extra vertical space from older footer rules */
+  padding: 12px 16px; /* thin height */
+  border-top: 1px solid rgba(52,39,7,.12);
 
-  position: relative;
-  font-size: 14px;
-}
-
-.footer-left {
-  display: flex;
-  gap: 14px;
-}
-
-.footer-left img {
-  width: 18px;
-  height: 18px;
-  opacity: 0.7;
-  transition: opacity 0.2s ease;
-}
-
-.footer-left img:hover {
-  opacity: 1;
-}
-
-.footer-right a {
-  text-decoration: none;
-  color: inherit;
-  opacity: 0.7;
-}
-
-.footer-right a:hover {
-  opacity: 1;
-}
-
-/* FOOTER: thin, full-width, left icons + right privacy */
-.footer {
-  width: 100%;
-  border-top: 1px solid rgba(0,0,0,0.08);
-
-  /* thin height */
-  padding: 12px 0;
-  margin-top: 0;
-
-  /* layout */
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  /* push content to edges nicely */
-  padding-left: clamp(16px, 4vw, 48px);
-  padding-right: clamp(16px, 4vw, 48px);
-
-  /* stop any centering inherited from above */
-  text-align: left;
+  text-align: left; /* just in case */
+  font-size: 12px;
 }
 
-.footer-left {
+.footer-left{
   display: flex;
   align-items: center;
   gap: 14px;
 }
 
-.footer-left img {
-  width: 18px;
-  height: 18px;
+.footer-left img{
+  width: 22px;
+  height: 22px;
   display: block;
   opacity: 0.85;
 }
 
-.footer-left a:hover img {
-  opacity: 1;
-}
+.footer-left a:hover img{ opacity: 1; }
 
-.footer-right a {
-  font-size: 14px;
-  color: rgba(0,0,0,0.55);
+.footer-right a{
+  color: var(--muted);
   text-decoration: none;
 }
 
-.footer-right a:hover {
-  text-decoration: underline;
+.footer-right a:hover{ text-decoration: underline; }
+
+/* Mobile: keep SAME left/right layout (do NOT stack/center) */
+@media (max-width: 600px){
+  .footer{ padding: 12px 16px; }
+  .footer-left img{ width: 26px; height: 26px; } /* optional */
 }
