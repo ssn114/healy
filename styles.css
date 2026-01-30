@@ -4,7 +4,7 @@
   --text:#2B2E34;             /* your new main text color */
   --muted: var(--text);
   --muted2: var(--text);
-  --border: var(--text);
+  --border: var(--footer-bg);
 
   --footer-bg:#B7D7F0;        /* footer background */
   --footer-fg:#F6F3EE;        /* footer icons + privacy link */
