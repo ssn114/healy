@@ -2,9 +2,9 @@
   --bg:#F6F3EE;               /* page background stays same unless you want to change it */
 
   --text:#2B2E34;             /* your new main text color */
-  --muted: rgba(43,46,52,.65);
-  --muted2: rgba(43,46,52,.45);
-  --border: rgba(43,46,52,.22);
+  --muted: var(--text);
+  --muted2: var(--text);
+  --border: var(--text);
 
   --footer-bg:#B7D7F0;        /* footer background */
   --footer-fg:#F6F3EE;        /* footer icons + privacy link */
@@ -48,12 +48,13 @@ body{
 }
 
 h1{
-  margin: 0 auto 34px;          /* bigger gap under title */
+  margin: 0 auto 34px;
+  font-family: "Archivo", Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 500;          /* Archivo Medium */
   font-size: 60px;
   line-height: 1.1;
   letter-spacing: -0.05em;
-  font-weight: 500;
-  max-width: 520px;             /* desktop/tablet title width */
+  max-width: 520px;
 }
 
 .serif{
@@ -106,7 +107,7 @@ h1{
   letter-spacing: -0.03em;
   font-weight: 500; /* Inter Medium */
   background: var(--footer-bg);
-  color: var(--text);
+  color: var(--bg);
 }
 
 .tiny{
@@ -152,14 +153,18 @@ h1{
   padding: 80px 20px 120px;
 }
 
-.privacy h1 {
-  text-align: center;
-  margin-bottom: 48px;
+.privacy h1{
+  font-family: "Archivo", Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 46px;
+  line-height: 1.1;
+  max-width: none;
+  white-space: nowrap;
 }
 
-.privacy h2 {
-  margin-top: 48px;
-  margin-bottom: 16px;
+.privacy h2{
+  font-family: "Archivo", Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 500;
 }
 
 .privacy p,
@@ -249,3 +254,9 @@ h1{
   }
 }
 
+@media (max-width: 420px){
+  .privacy h1{
+    white-space: normal;
+    font-size: 40px;
+  }
+}
