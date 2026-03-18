@@ -1,13 +1,13 @@
 :root{
-  --bg:#F6F3EE;               /* page background stays same unless you want to change it */
+  --bg:#FBF9EC;               /* page background stays same unless you want to change it */
 
   --text:#2B2E34;             /* your new main text color */
   --muted: var(--text);
   --muted2: var(--text);
   --border: var(--footer-bg);
 
-  --footer-bg:#B7D7F0;        /* footer background */
-  --footer-fg:#F6F3EE;        /* footer icons + privacy link */
+  --footer-bg:#510202;        /* footer background */
+  --footer-fg:#FBF9EC;        /* footer icons + privacy link */
 }
 
 *{ box-sizing:border-box; }
